@@ -10,7 +10,7 @@ import plotly.graph_objects as go
 
 app = dash.Dash(__name__)
 
-mapbox_access_token = open("f:/mydrive/VyatkaSU/Bank Khlynov/mt.mapbox_token").read()
+mapbox_access_token = open("../mt.mapbox_token").read()
 mapbox_style = "mapbox://styles/plotlymapbox/cjvprkf3t1kns1cqjxuxmwixz"
 
 with urlopen('https://raw.githubusercontent.com/VPcenter/GeoJSON/master/maps/vyatka.geojson') as response:
