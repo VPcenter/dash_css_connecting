@@ -1,0 +1,9 @@
+language: python
+python:
+    - "3.8.2"
+deploy:
+    provider: pages
+    skip-cleanup: true
+    github-token: $GITHUB_TOKEN
+    on:
+        branch: gh-pages
