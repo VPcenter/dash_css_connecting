@@ -4,8 +4,8 @@ python:
 before_install:
   - python --version
   - pip install -U pip
-  - pip install -U pytest
-script: pytest app.py
+  - pip install -r reqirements.txt
+script: python app.py
 notifications:
   email:
     recipients:
