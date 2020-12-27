@@ -1,7 +1,14 @@
-os: windows
-language: sh
-python: "3.8.2"
-install:
-    - pip install -r requirements.txt
-script:
-    - pytest
+language: python
+python: 
+  - 3.8
+before_install:
+  - python --version
+  - pip install -U pip
+  - pip install -U pytest
+script: pytest app.py
+notifications:
+  email:
+    recipients:
+      - vpokhapkin@yandex.ru
+    on_success: never
+    on_failure: change
